@@ -1,0 +1,48 @@
+name: validate-index
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate index.json
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const d = JSON.parse(fs.readFileSync('index.json', 'utf8'));
+          if (d.schema !== 1) throw new Error('schema 必须为 1');
+          if (!Array.isArray(d.plugins) || d.plugins.length === 0) throw new Error('plugins 不能为空');
+          const ids = new Set();
+          for (const p of d.plugins) {
+            for (const k of ['id', 'name', 'version', 'url']) {
+              if (!p[k] || typeof p[k] !== 'string') throw new Error(`条目缺字段 ${k}: ${JSON.stringify(p).slice(0, 80)}`);
+            }
+            if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.id)) throw new Error(`id 必须 kebab-case: ${p.id}`);
+            if (ids.has(p.id)) throw new Error(`id 重复: ${p.id}`);
+            ids.add(p.id);
+            if (!p.url.startsWith('https://')) throw new Error(`url 必须 https: ${p.id}`);
+            if (!/^[0-9a-f]{64}$/.test(p.sha256 || '')) throw new Error(`sha256 必须 64 位 hex: ${p.id}`);
+            if (p.signer && !/^[0-9a-f]{64}$/.test(p.signer)) throw new Error(`signer 必须 64 位 hex: ${p.id}`);
+            for (const v of (p.versions || [])) {
+              if (!v.version || !v.url) throw new Error(`versions[] 条目缺 version/url: ${p.id}`);
+              if (!v.url.startsWith('https://')) throw new Error(`versions[] url 必须 https: ${p.id}`);
+            }
+          }
+          // 信封签名存在时，签名者必须与所有条目 signer 一致（官方索引口径）
+          if (d.signer) {
+            for (const p of d.plugins) {
+              if (p.signer && p.signer.toLowerCase() !== d.signer.toLowerCase())
+                throw new Error(`条目 signer 与信封 signer 不一致: ${p.id}`);
+            }
+          }
+          console.log(`OK: ${d.plugins.length} 个插件条目`);
+          EOF
