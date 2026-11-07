@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "e4c6a6663745e21df25bebd8ea11dcdc341c65796008c73a43d7edbee40ba9b12e8caab297a35627635259d4bfc82623c1959cb84a37949c65b9d682adee6c03",
+  "signature": "544063fb768d85def5678816bf20141771b43def26ddf87f298a7b2fcaa8c182bdc742425afbed34cc20dcad1293930305fc9e00816d661eb3e0d2bd9efacf07",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -245,27 +245,27 @@
       "version": "1.0.0",
       "author": "DiskPilot 官方",
       "description": "只读审计 Chrome/Edge/Brave/Opera/Vivaldi/Firefox 各 profile 的缓存目录（Cache/Code Cache/GPUCache/Service Worker CacheStorage 等）体积，输出每 profile 总量 + Top N 子目录，带深度/条目上限防卡死；不删文件不杀进程。",
-      "category": "浏览器",
+      "category": "综合检测",
       "risk": "low",
       "tags": [
-        "浏览器",
+        "综合检测",
         "缓存",
         "Chrome",
         "Edge",
         "只读"
       ],
       "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.4.0/browser-cache-hunter-1.0.0.zip",
-      "sha256": "459a0aca6e2262d2903dde243c3b8f0be9f9a5b6b2fcaae163eb67eb2a6416c8",
+      "sha256": "db14f2fc183c970b7f650daa48903409d1b32c2b84c07a768dca2c2d6f047d0a",
       "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
       "downloads": 0,
       "versions": [
         {
           "version": "1.0.0",
           "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.4.0/browser-cache-hunter-1.0.0.zip",
-          "sha256": "459a0aca6e2262d2903dde243c3b8f0be9f9a5b6b2fcaae163eb67eb2a6416c8",
+          "sha256": "db14f2fc183c970b7f650daa48903409d1b32c2b84c07a768dca2c2d6f047d0a",
           "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
           "min_app": "0.2.4",
-          "size_hint": 97909,
+          "size_hint": 97919,
           "notes": "R517 第五批（只读诊断工具）"
         }
       ],
