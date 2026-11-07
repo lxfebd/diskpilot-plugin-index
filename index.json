@@ -273,6 +273,20 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/browser-cache-hunter"
+    },
+    {
+      "id": "r518-test-probe",
+      "name": "R518 测试探针",
+      "version": "0.0.1",
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.4.0/browser-cache-hunter-1.0.0.zip",
+      "sha256": "db14f2fc183c970b7f650daa48903409d1b32c2b84c07a768dca2c2d6f047d0a",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "category": "综合检测",
+      "description": "R518 演练用占位条目（结构合法、signer 一致，但信封签名未重签）",
+      "tags": [
+        "test"
+      ],
+      "versions": []
     }
   ]
 }
