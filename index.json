@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "544063fb768d85def5678816bf20141771b43def26ddf87f298a7b2fcaa8c182bdc742425afbed34cc20dcad1293930305fc9e00816d661eb3e0d2bd9efacf07",
+  "signature": "fd3e2f1b396af2c00743fb6b43eeab09a2e995d3eb9520da8a343543921c0e9bdfdec10e41120d81e98e384ddd602230b83874f82241aad371c2e5d7a923110c",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -273,6 +273,40 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/browser-cache-hunter"
+    },
+    {
+      "id": "schtask-hunter",
+      "name": "计划任务审计器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "只读审计 schtasks /Query /V 全部计划任务：摘要（总数/启用/上次失败）+ 可疑 Top N（上次失败、启用+登录开机触发、命令在临时/非系统目录），自动适配中英文列头与分页重复标题，不禁用任务不改配置。",
+      "category": "综合检测",
+      "risk": "low",
+      "tags": [
+        "计划任务",
+        "开机启动",
+        "安全",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.5.0/schtask-hunter-1.0.0.zip",
+      "sha256": "4bde043fcd42545c94edfcd0bc1916ddfebf800c6c30e6f67e00dfc552965f4b",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.5.0/schtask-hunter-1.0.0.zip",
+          "sha256": "4bde043fcd42545c94edfcd0bc1916ddfebf800c6c30e6f67e00dfc552965f4b",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 121993,
+          "notes": "R521 第六批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
     }
   ]
 }
