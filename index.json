@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "ed60444cd74cb9a15ec8f6e0e908b37a42f4a1d63ae5b0afc0df41359e47ba4b41e97a64a501770603a3b4c56abd75752b4951f1213a05e3ccfabd7cdbc1020f",
+  "signature": "83f2efe27c31cd97b80c88a0247114a954274f24269d7cf685d2316ccb966b81a385f0dc193dc840badcedb11fbfad547ca6ac47851c2d7aebf9a0c357582806",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -203,6 +203,41 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/port-hunter"
+    },
+    {
+      "id": "drive-health",
+      "name": "磁盘健康审计器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "PowerShell 存储模块只读审计：Get-PhysicalDisk 物理盘健康表（型号/介质/总线/HealthStatus/容量，非 Healthy 标红）+ Get-Disk 逻辑盘表 + --smart 追加 SATA 盘 SMART 属性（NVMe/非管理员下明确标注不可用，不写盘不改配置）。",
+      "category": "硬盘工具",
+      "risk": "low",
+      "tags": [
+        "磁盘",
+        "健康",
+        "SMART",
+        "审计",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.3.0/drive-health-1.0.0.zip",
+      "sha256": "d1080efc6baf348bba6fa9b57c587352eaad5f88f9d9ebfa1540f7d11b9144cc",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.3.0/drive-health-1.0.0.zip",
+          "sha256": "d1080efc6baf348bba6fa9b57c587352eaad5f88f9d9ebfa1540f7d11b9144cc",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 126552,
+          "notes": "R512 第四批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/drive-health"
     }
   ]
 }
