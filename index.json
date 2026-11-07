@@ -1,108 +1,174 @@
 {
+  "schema": 1,
+  "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
+  "signature": "d07e90f22102fc2ab84fdcb53a78fefe689ffddaa02aecb582d32863a3e6cdb697feddd39d4b07f8f8a96fe8153a462b59f33634d5da89f027271d044db21d0a",
+  "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
-      "author": "DiskPilot 官方",
-      "category": "硬盘工具",
-      "depends_on": [],
-      "description": "递归扫描目录，按大小列出最大的文件 TopN（只读报告，不做任何删除）。",
-      "downloads": 0,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/bigfile-finder",
       "id": "bigfile-finder",
-      "license": "MIT",
       "name": "大文件扫描器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "递归扫描目录，按大小列出最大的文件 TopN（只读报告，不做任何删除）。",
+      "category": "硬盘工具",
       "risk": "low",
-      "sha256": "f4a7466f71517fb5a096e7bcd76ccb99c60a0fd34498faf1cf44d3db474c642d",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
       "tags": [
         "扫描",
         "大文件",
         "只读"
       ],
       "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/bigfile-finder-1.0.0.zip",
-      "verified": true,
-      "version": "1.0.0",
+      "sha256": "f4a7466f71517fb5a096e7bcd76ccb99c60a0fd34498faf1cf44d3db474c642d",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
       "versions": [
         {
-          "min_app": "0.2.4",
-          "notes": "首发版本（只读诊断工具）",
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/bigfile-finder-1.0.0.zip",
           "sha256": "f4a7466f71517fb5a096e7bcd76ccb99c60a0fd34498faf1cf44d3db474c642d",
           "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
           "size_hint": 0,
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/bigfile-finder-1.0.0.zip",
-          "version": "1.0.0"
+          "notes": "首发版本（只读诊断工具）"
         }
-      ]
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/bigfile-finder"
     },
     {
-      "author": "DiskPilot 官方",
-      "category": "硬盘工具",
-      "depends_on": [],
-      "description": "按文件大小 + 全量内容哈希找出疑似重复文件组（只读，结果标注「疑似」需人工确认后再删）。",
-      "downloads": 0,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/dup-finder",
       "id": "dup-finder",
-      "license": "MIT",
       "name": "重复文件查找",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "按文件大小 + 全量内容哈希找出疑似重复文件组（只读，结果标注「疑似」需人工确认后再删）。",
+      "category": "硬盘工具",
       "risk": "low",
-      "sha256": "b4cc3ab4415dfb7677bb0d74c617e8adb76d7f885a0c45747520b5f9a313d7fe",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
       "tags": [
         "重复文件",
         "去重",
         "只读"
       ],
       "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/dup-finder-1.0.0.zip",
-      "verified": true,
-      "version": "1.0.0",
+      "sha256": "b4cc3ab4415dfb7677bb0d74c617e8adb76d7f885a0c45747520b5f9a313d7fe",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
       "versions": [
         {
-          "min_app": "0.2.4",
-          "notes": "首发版本（只读诊断工具）",
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/dup-finder-1.0.0.zip",
           "sha256": "b4cc3ab4415dfb7677bb0d74c617e8adb76d7f885a0c45747520b5f9a313d7fe",
           "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
           "size_hint": 0,
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/dup-finder-1.0.0.zip",
-          "version": "1.0.0"
+          "notes": "首发版本（只读诊断工具）"
         }
-      ]
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/dup-finder"
     },
     {
-      "author": "DiskPilot 官方",
-      "category": "综合检测",
-      "depends_on": [],
-      "description": "只读列出注册表 Run 键（HKCU/HKLM）与启动文件夹里的启动项，输出审计报告。",
-      "downloads": 0,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/startup-audit",
       "id": "startup-audit",
-      "license": "MIT",
       "name": "启动项审计",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "只读列出注册表 Run 键（HKCU/HKLM）与启动文件夹里的启动项，输出审计报告。",
+      "category": "综合检测",
       "risk": "low",
-      "sha256": "5ede859e01fdcba3a5472cedcd0fb2b6abcda4ed5ff525ae66fe5bdf08dcd9f1",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
       "tags": [
         "启动项",
         "审计",
         "只读"
       ],
       "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/startup-audit-1.0.0.zip",
-      "verified": true,
-      "version": "1.0.0",
+      "sha256": "5ede859e01fdcba3a5472cedcd0fb2b6abcda4ed5ff525ae66fe5bdf08dcd9f1",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
       "versions": [
         {
-          "min_app": "0.2.4",
-          "notes": "首发版本（只读诊断工具）",
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/startup-audit-1.0.0.zip",
           "sha256": "5ede859e01fdcba3a5472cedcd0fb2b6abcda4ed5ff525ae66fe5bdf08dcd9f1",
           "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
           "size_hint": 0,
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.0.0/startup-audit-1.0.0.zip",
-          "version": "1.0.0"
+          "notes": "首发版本（只读诊断工具）"
         }
-      ]
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/startup-audit"
+    },
+    {
+      "id": "temp-hunter",
+      "name": "临时目录扫描器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "扫描 %TEMP% 与系统 Temp，按年龄分桶（>30天/7-30天/<7天）统计并列出最大临时文件 TopN（只读报告，不做任何删除）。",
+      "category": "硬盘工具",
+      "risk": "low",
+      "tags": [
+        "临时文件",
+        "扫描",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.1.0/temp-hunter-1.0.0.zip",
+      "sha256": "c4fe0c9709b305702c6e6e3b809130d28495dafaa45bbf75b4f18750ffc615eb",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.1.0/temp-hunter-1.0.0.zip",
+          "sha256": "c4fe0c9709b305702c6e6e3b809130d28495dafaa45bbf75b4f18750ffc615eb",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 89806,
+          "notes": "R507 第二批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/temp-hunter"
+    },
+    {
+      "id": "log-hunter",
+      "name": "大日志文件扫描器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "扫描常见日志类扩展名（.log/.dmp/.wer/.etl 等，含轮转压缩形态）中大于阈值的文件，按大小列 TopN（只读报告，不做任何删除）。",
+      "category": "硬盘工具",
+      "risk": "low",
+      "tags": [
+        "日志",
+        "扫描",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.1.0/log-hunter-1.0.0.zip",
+      "sha256": "f34d5bd551ba4a33a2da6b268bc6b48df00181c4cd74105be68d80cbb59615f6",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.1.0/log-hunter-1.0.0.zip",
+          "sha256": "f34d5bd551ba4a33a2da6b268bc6b48df00181c4cd74105be68d80cbb59615f6",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 91957,
+          "notes": "R507 第二批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/log-hunter"
     }
-  ],
-  "schema": 1,
-  "signature": "e46049dc1f4d36f051ecd7ee0c5cbedfd5b22751caac08cbc6a2956c80a88e921d2d7c0125e42da584281b256361d29235f7992027b352153587dcc988b52801",
-  "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-  "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json"
+  ]
 }
