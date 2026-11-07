@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "d07e90f22102fc2ab84fdcb53a78fefe689ffddaa02aecb582d32863a3e6cdb697feddd39d4b07f8f8a96fe8153a462b59f33634d5da89f027271d044db21d0a",
+  "signature": "ed60444cd74cb9a15ec8f6e0e908b37a42f4a1d63ae5b0afc0df41359e47ba4b41e97a64a501770603a3b4c56abd75752b4951f1213a05e3ccfabd7cdbc1020f",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -169,6 +169,40 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/log-hunter"
+    },
+    {
+      "id": "port-hunter",
+      "name": "端口占用审计器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "解析 netstat -ano + tasklist，按本地端口排序输出 TopN 端口占用表（协议/地址/状态/PID/进程名）与摘要统计，支持 --proto/--listen 过滤（只读报告，不杀进程）。",
+      "category": "硬盘工具",
+      "risk": "low",
+      "tags": [
+        "端口",
+        "网络",
+        "审计",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.2.0/port-hunter-1.0.0.zip",
+      "sha256": "ffe7d6d4f1124856518c8e85467174c0559c51cc38f7e3d7331d61132c767737",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.2.0/port-hunter-1.0.0.zip",
+          "sha256": "ffe7d6d4f1124856518c8e85467174c0559c51cc38f7e3d7331d61132c767737",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 134434,
+          "notes": "R510 第三批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/port-hunter"
     }
   ]
 }
