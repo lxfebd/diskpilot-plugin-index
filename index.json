@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "884b6d91ea2a44607a76a120786fc94e8212415ff6ed3d8550a6f6ec0da8a3664d9d8f76bc2c5120b6403cbcb53c6920cd0053e482c41a777ac522bae251f00b",
+  "signature": "e8ce609c8affd09b3b3349181a5b5f06e866b97e8c80edb03cd4ffe57e8408e130d87142b40c2976974a59a0609449aa2194f69d5fcb40607ede260d91077e05",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -275,40 +275,6 @@
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/browser-cache-hunter"
     },
     {
-      "id": "schtask-hunter",
-      "name": "计划任务审计器",
-      "version": "1.0.0",
-      "author": "DiskPilot 官方",
-      "description": "只读审计 schtasks /Query /V 全部计划任务：摘要（总数/启用/上次失败）+ 可疑 Top N（上次失败、启用+登录开机触发、命令在临时/非系统目录），自动适配中英文列头与分页重复标题，不禁用任务不改配置。",
-      "category": "综合检测",
-      "risk": "low",
-      "tags": [
-        "计划任务",
-        "开机启动",
-        "安全",
-        "只读"
-      ],
-      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.5.0/schtask-hunter-1.0.0.zip",
-      "sha256": "4bde043fcd42545c94edfcd0bc1916ddfebf800c6c30e6f67e00dfc552965f4b",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-      "downloads": 0,
-      "versions": [
-        {
-          "version": "1.0.0",
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.5.0/schtask-hunter-1.0.0.zip",
-          "sha256": "4bde043fcd42545c94edfcd0bc1916ddfebf800c6c30e6f67e00dfc552965f4b",
-          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-          "min_app": "0.2.4",
-          "size_hint": 121993,
-          "notes": "R521 第六批（只读诊断工具）"
-        }
-      ],
-      "license": "MIT",
-      "depends_on": [],
-      "verified": true,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
-    },
-    {
       "id": "reg-hunter",
       "name": "注册表审计器",
       "version": "1.1.0",
@@ -393,6 +359,49 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/svc-hunter"
+    },
+    {
+      "id": "schtask-hunter",
+      "name": "计划任务审计器",
+      "version": "1.1.0",
+      "author": "DiskPilot 官方",
+      "description": "schtasks /Query /V 只读全景，可疑 Top N（上次失败、启用+登录/开机触发+命令在临时或非系统目录）；v1.1.0 新增 --json 机读输出供待人工确认清单入队（仍不禁用任务）。",
+      "category": "综合检测",
+      "risk": "low",
+      "tags": [
+        "计划任务",
+        "可疑任务",
+        "只读",
+        "Windows"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.10.0/schtask-hunter-1.1.0.zip",
+      "sha256": "a764e64add860a6e28df6cd024620965824178cc2e2170569dd26856fc0c8ed6",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.5.0/schtask-hunter-1.0.0.zip",
+          "sha256": "4bde043fcd42545c94edfcd0bc1916ddfebf800c6c30e6f67e00dfc552965f4b",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 121993,
+          "notes": "R521 第六批（只读诊断工具）"
+        },
+        {
+          "version": "1.1.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.10.0/schtask-hunter-1.1.0.zip",
+          "sha256": "a764e64add860a6e28df6cd024620965824178cc2e2170569dd26856fc0c8ed6",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 123474,
+          "notes": "R530: --json 机读输出，供待人工确认清单入队"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
     }
   ]
 }
