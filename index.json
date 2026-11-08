@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "5bc6d467daac7e154c65ad9bc92c4c22e5828c84510b9228b9af071499b782602821b1e116e0ac82e1ad6f256ec307ae33be4a2da4134e81ecc96095e1859507",
+  "signature": "b7e198a253d445af364db6816a59b4081ae9d86421641ed776f98c2412e0b76df37e8c4775bec867ca1293638e705b73de2fbab1530010d2b361616bc65f0802",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -309,40 +309,6 @@
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
     },
     {
-      "id": "reg-hunter",
-      "name": "注册表审计器",
-      "version": "1.0.0",
-      "author": "DiskPilot 官方",
-      "description": "只读审计 reg query /s：卸载残留（InstallLocation/DisplayIcon 路径失效，区分系统盘失效与外置盘未挂载）+ Run/RunOnce 失效启动项（系统命令免检），不删键不改配置。",
-      "category": "综合检测",
-      "risk": "low",
-      "tags": [
-        "注册表",
-        "卸载残留",
-        "启动项",
-        "只读"
-      ],
-      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.6.0/reg-hunter-1.0.0.zip",
-      "sha256": "8460fdf9393f6dfddeaa8fb3e725e2026a25db7da3f6822b94773106fff33526",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-      "downloads": 0,
-      "versions": [
-        {
-          "version": "1.0.0",
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.6.0/reg-hunter-1.0.0.zip",
-          "sha256": "8460fdf9393f6dfddeaa8fb3e725e2026a25db7da3f6822b94773106fff33526",
-          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-          "min_app": "0.2.4",
-          "size_hint": 132863,
-          "notes": "R523 第七批（只读诊断工具）"
-        }
-      ],
-      "license": "MIT",
-      "depends_on": [],
-      "verified": true,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/reg-hunter"
-    },
-    {
       "id": "svc-hunter",
       "name": "服务审计器",
       "version": "1.0.0",
@@ -375,6 +341,49 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/svc-hunter"
+    },
+    {
+      "id": "reg-hunter",
+      "name": "注册表审计器",
+      "version": "1.1.0",
+      "author": "DiskPilot 官方",
+      "description": "只读审计卸载残留与 Run/RunOnce 失效启动项；v1.1.0 新增 --json 机读输出供主应用入待人工确认清单（仍不删键）。",
+      "category": "综合检测",
+      "risk": "low",
+      "tags": [
+        "注册表",
+        "失效残留",
+        "只读",
+        "Windows"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.8.0/reg-hunter-1.1.0.zip",
+      "sha256": "5df4871a41a1791ebbe679e9c2d0d133e36a94bb5b6268c14370149352b7e3b1",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.6.0/reg-hunter-1.0.0.zip",
+          "sha256": "8460fdf9393f6dfddeaa8fb3e725e2026a25db7da3f6822b94773106fff33526",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 132863,
+          "notes": "R523 第七批（只读诊断工具）"
+        },
+        {
+          "version": "1.1.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.8.0/reg-hunter-1.1.0.zip",
+          "sha256": "5df4871a41a1791ebbe679e9c2d0d133e36a94bb5b6268c14370149352b7e3b1",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 135237,
+          "notes": "R530: --json 机读输出，供待人工确认清单入队"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/reg-hunter"
     }
   ]
 }
