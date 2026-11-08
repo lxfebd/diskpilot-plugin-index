@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "b7e198a253d445af364db6816a59b4081ae9d86421641ed776f98c2412e0b76df37e8c4775bec867ca1293638e705b73de2fbab1530010d2b361616bc65f0802",
+  "signature": "884b6d91ea2a44607a76a120786fc94e8212415ff6ed3d8550a6f6ec0da8a3664d9d8f76bc2c5120b6403cbcb53c6920cd0053e482c41a777ac522bae251f00b",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -309,40 +309,6 @@
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
     },
     {
-      "id": "svc-hunter",
-      "name": "服务审计器",
-      "version": "1.0.0",
-      "author": "DiskPilot 官方",
-      "description": "只读审计 sc query + sc qc：枚举全部 Windows 服务与二进制路径，高亮在临时/用户目录且运行中的可疑服务（系统目录服务免判），不停服务不改配置。",
-      "category": "综合检测",
-      "risk": "low",
-      "tags": [
-        "服务",
-        "可疑服务",
-        "只读",
-        "Windows"
-      ],
-      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.7.0/svc-hunter-1.0.0.zip",
-      "sha256": "2e35915b1c646d90aef5d188656b7fe7ef6bc7592a4fa8843612ca217268537d",
-      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-      "downloads": 0,
-      "versions": [
-        {
-          "version": "1.0.0",
-          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.7.0/svc-hunter-1.0.0.zip",
-          "sha256": "2e35915b1c646d90aef5d188656b7fe7ef6bc7592a4fa8843612ca217268537d",
-          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
-          "min_app": "0.2.4",
-          "size_hint": 128517,
-          "notes": "R527 第八批（只读诊断工具）"
-        }
-      ],
-      "license": "MIT",
-      "depends_on": [],
-      "verified": true,
-      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/svc-hunter"
-    },
-    {
       "id": "reg-hunter",
       "name": "注册表审计器",
       "version": "1.1.0",
@@ -384,6 +350,49 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/reg-hunter"
+    },
+    {
+      "id": "svc-hunter",
+      "name": "服务审计器",
+      "version": "1.1.0",
+      "author": "DiskPilot 官方",
+      "description": "只读审计 sc query + sc qc：枚举全部 Windows 服务与二进制路径，高亮在临时/用户目录且运行中的可疑服务；v1.1.0 新增 --json 机读输出供待人工确认清单入队（仍不停服务不改配置）。",
+      "category": "综合检测",
+      "risk": "low",
+      "tags": [
+        "服务",
+        "可疑服务",
+        "只读",
+        "Windows"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.9.0/svc-hunter-1.1.0.zip",
+      "sha256": "429120d9c8bb0f9fd5a1d32d31113bf7d764e9204f8ccda8ea938186ce61130f",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.7.0/svc-hunter-1.0.0.zip",
+          "sha256": "2e35915b1c646d90aef5d188656b7fe7ef6bc7592a4fa8843612ca217268537d",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 128517,
+          "notes": "R527 第八批（只读诊断工具）"
+        },
+        {
+          "version": "1.1.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.9.0/svc-hunter-1.1.0.zip",
+          "sha256": "429120d9c8bb0f9fd5a1d32d31113bf7d764e9204f8ccda8ea938186ce61130f",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 130100,
+          "notes": "R530: --json 机读输出，供待人工确认清单入队"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/svc-hunter"
     }
   ]
 }
