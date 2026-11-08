@@ -2,7 +2,7 @@
   "schema": 1,
   "source_url": "https://raw.githubusercontent.com/lxfebd/diskpilot-plugin-index/main/index.json",
   "fetched_at": 0,
-  "signature": "fd3e2f1b396af2c00743fb6b43eeab09a2e995d3eb9520da8a343543921c0e9bdfdec10e41120d81e98e384ddd602230b83874f82241aad371c2e5d7a923110c",
+  "signature": "906f561a91a69791e5b6e6935bc2b9b2c63772717d35460d6d4545b32953ff76eb8042082fa7c3693fc263481f4ed9e1180f32ff9526c8903f8873c58a1a9306",
   "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
   "plugins": [
     {
@@ -307,6 +307,40 @@
       "depends_on": [],
       "verified": true,
       "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/schtask-hunter"
+    },
+    {
+      "id": "reg-hunter",
+      "name": "注册表审计器",
+      "version": "1.0.0",
+      "author": "DiskPilot 官方",
+      "description": "只读审计 reg query /s：卸载残留（InstallLocation/DisplayIcon 路径失效，区分系统盘失效与外置盘未挂载）+ Run/RunOnce 失效启动项（系统命令免检），不删键不改配置。",
+      "category": "综合检测",
+      "risk": "low",
+      "tags": [
+        "注册表",
+        "卸载残留",
+        "启动项",
+        "只读"
+      ],
+      "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.6.0/reg-hunter-1.0.0.zip",
+      "sha256": "8460fdf9393f6dfddeaa8fb3e725e2026a25db7da3f6822b94773106fff33526",
+      "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+      "downloads": 0,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/lxfebd/diskpilot-plugin-index/releases/download/v1.6.0/reg-hunter-1.0.0.zip",
+          "sha256": "8460fdf9393f6dfddeaa8fb3e725e2026a25db7da3f6822b94773106fff33526",
+          "signer": "4eac4122388b0aa428f973d174fd84c4aa3461e1574e5511fe59c6adeeaf00a5",
+          "min_app": "0.2.4",
+          "size_hint": 132863,
+          "notes": "R523 第七批（只读诊断工具）"
+        }
+      ],
+      "license": "MIT",
+      "depends_on": [],
+      "verified": true,
+      "homepage": "https://github.com/lxfebd/diskpilot/blob/main/plugins/reg-hunter"
     }
   ]
 }
